@@ -5,6 +5,9 @@ edition = "2021"
 publish = true
 description = "tx-sitter rust client"
 license = "MIT"
+documentation = ""
+homepage = ""
+repository = "https://github.com/karankurbur/tx-sitter-client-rust"
 
 [dependencies]
 chrono = { version = "0.4.23", features = ["serde"] }
