@@ -64,7 +64,7 @@ impl TxSitterClient {
             .await?;
 
         if let Some(payload_blob) = res.payload {
-            let val = String::from_utf8(payload_blob.clone().into_inner())?;
+            let val = String::from_utf8(payload_blob.into_inner())?;
             let response: TransactionResponse =
                 serde_json::from_str(&val).context("Invalid transaction response")?;
 
@@ -96,7 +96,7 @@ impl TxSitterClient {
             .await?;
 
         if let Some(payload_blob) = res.payload {
-            let val = String::from_utf8(payload_blob.clone().into_inner())?;
+            let val = String::from_utf8(payload_blob.into_inner())?;
 
             Ok(serde_json::from_str(&val).context("Invalid transaction payload")?)
         } else {
@@ -139,12 +139,13 @@ impl TxSitterClient {
 
 #[cfg(test)]
 mod tests {
-    use ethers::middleware::providers::Provider;
-    use ethers::prelude::{abigen, H160};
-    use ethers::providers::{Http, Middleware};
-    use ethers::types::H256;
     use std::str::FromStr;
     use std::sync::Arc;
+
+    use ethers::middleware::providers::Provider;
+    use ethers::prelude::{abigen, H160};
+    use ethers::providers::Middleware;
+    use ethers::types::H256;
 
     use crate::types::transaction::{TransactionPriority, TxSitterTransactionInput};
     use crate::{TxSitterClient, TxSitterConfig};
@@ -197,7 +198,7 @@ mod tests {
             )
             .await?;
 
-        println!("tx_hash = {}", tx.tx_hash.unwrap());
+        println!("tx_hash = {}", tx.tx_hash);
 
         Ok(())
     }

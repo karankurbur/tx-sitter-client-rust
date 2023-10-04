@@ -13,7 +13,7 @@ use crate::rpc::data::{JsonRpcResponse, JsonRpcVersion, RpcLambdaRequest, RpcPay
 mod data;
 mod error;
 
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct TxSitterRpcClient {
     relayer_id: String,
     inner: Arc<TxSitterInner>,
@@ -65,7 +65,9 @@ impl JsonRpcClient for TxSitterRpcClient {
         match (result.result, result.error) {
             (Some(result), None) => Ok(result),
             (None, Some(error)) => Err(ClientError::Rpc(error)),
-            _ => Err(ClientError::Other(format!("Invalid response from the RPC"))),
+            _ => Err(ClientError::Other(
+                "Invalid response from the RPC".to_string(),
+            )),
         }
     }
 }
