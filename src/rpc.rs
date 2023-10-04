@@ -2,7 +2,7 @@ use std::sync::Arc;
 
 use async_trait::async_trait;
 use aws_sdk_lambda::primitives::Blob;
-pub use ethers::providers::JsonRpcClient;
+use ethers::providers::JsonRpcClient;
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 
@@ -10,8 +10,8 @@ use self::error::ClientError;
 use super::TxSitterInner;
 use crate::rpc::data::{JsonRpcResponse, JsonRpcVersion, RpcLambdaRequest, RpcPayload};
 
-mod data;
-mod error;
+pub mod data;
+pub mod error;
 
 #[derive(Clone, Debug)]
 pub struct TxSitterRpcClient {
