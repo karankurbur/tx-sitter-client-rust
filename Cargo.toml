@@ -1,6 +1,6 @@
 [package]
 name = "tx-sitter-client"
-version = "1.0.3"
+version = "1.0.2"
 edition = "2021"
 publish = true
 description = "tx-sitter rust client"
