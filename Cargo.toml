@@ -1,12 +1,12 @@
 [package]
 name = "tx-sitter-client"
-version = "1.0.2"
+version = "1.0.3"
 edition = "2021"
 publish = true
 description = "tx-sitter rust client"
 license = "MIT"
-documentation = ""
-homepage = ""
+documentation = "https://github.com/karankurbur/tx-sitter-client-rust"
+homepage = "https://github.com/karankurbur/tx-sitter-client-rust"
 repository = "https://github.com/karankurbur/tx-sitter-client-rust"
 
 [dependencies]

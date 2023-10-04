@@ -2,7 +2,7 @@ use std::sync::Arc;
 
 use async_trait::async_trait;
 use aws_sdk_lambda::primitives::Blob;
-use ethers::providers::JsonRpcClient;
+pub use ethers::providers::JsonRpcClient;
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 
