@@ -658,9 +658,9 @@ dependencies = [
 
 [[package]]
 name = "cargo_metadata"
-version = "0.18.0"
+version = "0.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fb9ac64500cc83ce4b9f8dafa78186aa008c8dea77a09b94cd307fd0cd5022a8"
+checksum = "e7daec1a2a2129eeba1644b220b4647ec537b0b5d4bfd6876fcc5a540056b592"
 dependencies = [
  "camino",
  "cargo-platform",
@@ -1165,7 +1165,8 @@ dependencies = [
 [[package]]
 name = "ethers"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1ad13497f6e0a24292fc7b408e30d22fe9dc262da1f40d7b542c3a44e7fc0476"
 dependencies = [
  "ethers-addressbook",
  "ethers-contract",
@@ -1180,7 +1181,8 @@ dependencies = [
 [[package]]
 name = "ethers-addressbook"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c6e9e8acd0ed348403cc73a670c24daba3226c40b98dc1a41903766b3ab6240a"
 dependencies = [
  "ethers-core",
  "once_cell",
@@ -1191,7 +1193,8 @@ dependencies = [
 [[package]]
 name = "ethers-contract"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d79269278125006bb0552349c03593ffa9702112ca88bc7046cc669f148fb47c"
 dependencies = [
  "const-hex",
  "ethers-contract-abigen",
@@ -1209,7 +1212,8 @@ dependencies = [
 [[package]]
 name = "ethers-contract-abigen"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ce95a43c939b2e4e2f3191c5ad4a1f279780b8a39139c9905b43a7433531e2ab"
 dependencies = [
  "Inflector",
  "const-hex",
@@ -1232,7 +1236,8 @@ dependencies = [
 [[package]]
 name = "ethers-contract-derive"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8e9ce44906fc871b3ee8c69a695ca7ec7f70e50cb379c9b9cb5e532269e492f6"
 dependencies = [
  "Inflector",
  "const-hex",
@@ -1247,7 +1252,8 @@ dependencies = [
 [[package]]
 name = "ethers-core"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c0a17f0708692024db9956b31d7a20163607d2745953f5ae8125ab368ba280ad"
 dependencies = [
  "arrayvec",
  "bytes",
@@ -1276,7 +1282,8 @@ dependencies = [
 [[package]]
 name = "ethers-etherscan"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0e53451ea4a8128fbce33966da71132cf9e1040dcfd2a2084fd7733ada7b2045"
 dependencies = [
  "ethers-core",
  "reqwest",
@@ -1290,7 +1297,8 @@ dependencies = [
 [[package]]
 name = "ethers-middleware"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "473f1ccd0c793871bbc248729fa8df7e6d2981d6226e4343e3bbaa9281074d5d"
 dependencies = [
  "async-trait",
  "auto_impl",
@@ -1316,7 +1324,8 @@ dependencies = [
 [[package]]
 name = "ethers-providers"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6838fa110e57d572336178b7c79e94ff88ef976306852d8cb87d9e5b1fc7c0b5"
 dependencies = [
  "async-trait",
  "auto_impl",
@@ -1325,7 +1334,6 @@ dependencies = [
  "const-hex",
  "enr",
  "ethers-core",
- "futures-channel",
  "futures-core",
  "futures-timer",
  "futures-util",
@@ -1347,14 +1355,14 @@ dependencies = [
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
- "winapi",
  "ws_stream_wasm",
 ]
 
 [[package]]
 name = "ethers-signers"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5ea44bec930f12292866166f9ddbea6aa76304850e4d8dcd66dc492b43d00ff1"
 dependencies = [
  "async-trait",
  "coins-bip32",
@@ -1372,7 +1380,8 @@ dependencies = [
 [[package]]
 name = "ethers-solc"
 version = "2.0.10"
-source = "git+https://github.com/gakonst/ethers-rs#edf3353cb419451a5eb2e89685e3e26e10783670"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "de34e484e7ae3cab99fbfd013d6c5dc7f9013676a4e0e414d8b12e1213e8b3ba"
 dependencies = [
  "cfg-if",
  "const-hex",
@@ -2530,7 +2539,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7f4c021e1093a56626774e81216a4ce732a735e5bad4868a03f3ed65ca0c3919"
 dependencies = [
  "once_cell",
- "toml_edit 0.19.15",
+ "toml_edit",
 ]
 
 [[package]]
@@ -3491,14 +3500,14 @@ dependencies = [
 
 [[package]]
 name = "toml"
-version = "0.8.2"
+version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "185d8ab0dfbb35cf1399a6344d8484209c088f75f8f68230da55d48d95d43e3d"
+checksum = "dd79e69d3b627db300ff956027cc6c3798cef26d22526befdfcd12feeb6d2257"
 dependencies = [
  "serde",
  "serde_spanned",
  "toml_datetime",
- "toml_edit 0.20.2",
+ "toml_edit",
 ]
 
 [[package]]
@@ -3515,17 +3524,6 @@ name = "toml_edit"
 version = "0.19.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1b5bb770da30e5cbfde35a2d7b9b8a2c4b8ef89548a7a6aeab5c9a576e3e7421"
-dependencies = [
- "indexmap 2.0.2",
- "toml_datetime",
- "winnow",
-]
-
-[[package]]
-name = "toml_edit"
-version = "0.20.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "396e4d48bbb2b7554c944bde63101b5ae446cff6ec4a24227428f15eb72ef338"
 dependencies = [
  "indexmap 2.0.2",
  "serde",
@@ -3633,7 +3631,7 @@ dependencies = [
 
 [[package]]
 name = "tx-sitter-client"
-version = "1.0.3"
+version = "1.0.4"
 dependencies = [
  "anyhow",
  "async-trait",
