@@ -62,5 +62,7 @@ pub enum TransactionType {
     Grant,
     Funding,
     WalletDeployment,
-    RootPropagation
+    RootPropagation,
+    Noop,
+    Bundle
 }
