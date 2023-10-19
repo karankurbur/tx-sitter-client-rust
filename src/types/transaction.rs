@@ -15,6 +15,8 @@ pub struct TxSitterTransactionInput {
     pub priority: Option<TransactionPriority>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub transaction_type: Option<TransactionType>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub metadata: Option<String>,
 }
 
 #[derive(Default, Debug, Serialize, Deserialize, Clone)]
